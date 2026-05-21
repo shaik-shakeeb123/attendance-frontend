@@ -39,7 +39,11 @@ const Login = () => {
       });
 
       if (response.data.success) {
+<<<<<<< HEAD
         navigate('/dashboard', { state: { attendanceData: response.data.data, registerNo } });
+=======
+        navigate('/dashboard', { state: { attendanceData: response.data.data } });
+>>>>>>> 2f2a59d9db4e7a9ab1f2937e8881c937dfc6958f
       } else {
         setError(response.data.message || 'Authentication failed. Please check your credentials.');
       }
@@ -78,7 +82,11 @@ const Login = () => {
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+<<<<<<< HEAD
         className="glass-panel p-8 sm:p-10 rounded-2xl w-full max-w-[430px] z-10 relative overflow-hidden group/card"
+=======
+        className="premium-card p-8 sm:p-10 rounded-2xl w-full max-w-[430px] z-10 relative overflow-hidden group/card"
+>>>>>>> 2f2a59d9db4e7a9ab1f2937e8881c937dfc6958f
       >
         {/* Sleek top ambient borders */}
         <div className="absolute top-0 inset-x-0 h-[1.5px] bg-gradient-to-r from-transparent via-primary/30 to-transparent transition-opacity duration-300"></div>
